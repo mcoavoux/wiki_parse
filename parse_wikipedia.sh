@@ -7,6 +7,6 @@ python2 wikiextractor/cirrus-extract.py -o extracted_texts/frwiki frwiki-2017100
 
 model=mtg/mind_the_gap_v1.2/pretrained_models_projective/ml_lex/FRENCH/
 
-python3 parse_wiki.py mtg2_parser ${model} nlp-toolbox/tokenizer/ --threads 20
+python3 parse_wiki.py mtg2_parser ${model} nlp-toolbox/tokenizer/ extracted_texts/frwiki --threads 26
 
 
