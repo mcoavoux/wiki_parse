@@ -1,6 +1,6 @@
 
 
-prefix=https://dumps.wikimedia.org/other/cirrussearch/20171009/
+prefix=https://dumps.wikimedia.org/other/cirrussearch/20171009
 
 date=20171009
 suffix=-${date}-cirrussearch-content.json.gz
