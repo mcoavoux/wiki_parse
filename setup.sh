@@ -12,7 +12,6 @@ git clone https://github.com/mcoavoux/nlp-toolbox.git
 cd nlp-toolbox/tokenizer
 make clean
 make
-cp tokenizer ../../.
 cd ../..
 
 
@@ -25,5 +24,7 @@ bash get_dependencies.bash
 cd ../src
 make clean
 make wstring
-cp mtg2_parser ../../../.
 cd ../../..
+cp mtg/mind_the_gap_v1.2/bin/mtg2_parser .
+
+
