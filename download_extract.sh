@@ -11,8 +11,8 @@ all=frwikisource
 mkdir -p extracted_texts
 for wik in ${all}
 do
-    wget ${prefix}/${wik}-${suffix}
-    python2 wikiextractor/cirrus-extract.py -o extracted_texts/${wik} ${wik}-${suffix}
+    wget ${prefix}/${wik}${suffix}
+    python2 wikiextractor/cirrus-extract.py -o extracted_texts/${wik} ${wik}${suffix}
 done
 
 
