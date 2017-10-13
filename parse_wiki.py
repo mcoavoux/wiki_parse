@@ -67,9 +67,6 @@ def preprocess_file(input_filename):
         ostream.flush()
         ostream.close()
     
-    if len(filenames) == 0:
-        print(input_filename)
-    
     return filenames
 
 
@@ -101,7 +98,7 @@ def nlp_pipeline(input_filenames, parser_path, parsing_model, tokenizer_path, be
             pref = "{}/{}".format(tokenizer_path, "prefixes.dic"),
             infiles = " ".join(input_filenames))
     
-    sys.stderr.write("{}\n".format(tokenizer_call))
+    #sys.stderr.write("{}\n".format(tokenizer_call))
     os.system(tokenizer_call)
 
     assert([input_file.endswith(".txt") for input_file in input_filenames])
@@ -125,7 +122,7 @@ def nlp_pipeline(input_filenames, parser_path, parsing_model, tokenizer_path, be
             beam = beamsize,
             infiles = " ".join(tokenized_filenames))
     
-    sys.stderr.write("{}\n".format(parser_call))
+    #sys.stderr.write("{}\n".format(parser_call))
     os.system(parser_call)
 
 
