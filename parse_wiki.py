@@ -92,12 +92,17 @@ def main(parser_path, parsing_model, tokenizer_path, beamsize, threads, wiki_roo
 
 def nlp_pipeline(input_filenames, parser_path, parsing_model, tokenizer_path, beamsize):
 
-    tokenizer_call = "{tokenizer} -p -s -S {cpd}  -P {pref} {infiles}".format(
-            tokenizer = "{}/tokenizer".format(tokenizer_path),
-            cpd = "{}/{}".format(tokenizer_path, "strong-cpd.dic"),
-            pref = "{}/{}".format(tokenizer_path, "prefixes.dic"),
+    #tokenizer_call = "{tokenizer} -p -s -S {cpd}  -P {pref} {infiles}".format(
+            #tokenizer = "{}/tokenizer".format(tokenizer_path),
+            #cpd = "{}/{}".format(tokenizer_path, "strong-cpd.dic"),
+            #pref = "{}/{}".format(tokenizer_path, "prefixes.dic"),
+            #infiles = " ".join(input_filenames))
+
+    tokenizer_call = "{tokenizer} {infiles}".format(
+            tokenizer = tokenizer_path,
             infiles = " ".join(input_filenames))
-    
+
+
     #sys.stderr.write("{}\n".format(tokenizer_call))
     os.system(tokenizer_call)
 
@@ -153,7 +158,7 @@ if __name__ == "__main__":
     
     parser.add_argument("parser", type = str, help="Path to parser executable.")
     parser.add_argument("model", type = str, help="Path to parsing model.")
-    parser.add_argument("tokenizer", type=str, help="Path to tokenizer folder (containing executable).")
+    parser.add_argument("tokenizer", type=str, help="Path to tokenizer executable.")
     parser.add_argument("wikiroot", type=str, help="Path to the root of the wiki folder.")
     parser.add_argument("--beam", "-b", type=int, help="Beam size [default=1]", default=1)
     parser.add_argument("--threads", "-t", type=int, help="Number of threads [default=1]", default=2)

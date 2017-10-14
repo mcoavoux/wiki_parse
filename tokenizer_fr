@@ -1,0 +1,4 @@
+#!/bin/bash
+#{tokenizer} -p -s -S {cpd}  -P {pref} {infiles}
+path=nlp-toolbox/tokenizer
+${path}/tokenizer -p -s -S ${path}/strong-cpd.dic -P ${path}/prefixes.dic "$@"
