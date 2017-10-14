@@ -41,8 +41,8 @@ Make sure the python command you use call Python2.
 Use the script `parse_wiki.py` to parse the data.
 
     python3 parse_wiki.py --help
-    python3 parse_wiki.py mtg2_parser mtg/mind_the_gap_v1.2/pretrained_models_projective/ml_lex/FRENCH/ nlp-toolbox/tokenizer/ --threads 20
-    # python3 parse_wiki.py <parser exe> <parsing model> <path to tokenizer root dir> --threads <num of threads> --beam <size of beam>
+    python3 parse_wiki.py ./mtg2_parser FRENCH ./tokenizer_fr --threads 20
+    # python3 parse_wiki.py <parser exe> <parsing model> <path to tokenizer> --threads <num of threads> --beam <size of beam>
 
 
 Pipeline:
