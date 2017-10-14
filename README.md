@@ -35,15 +35,19 @@ Preprocess the data with `wikiextractor`:
 
 Make sure the python command you use call Python2.
 
+In order to do this process for French wiki*, just run the script `download_extract.sh`.
+It must be easily adaptable to newer wiki dumps and / or other languages.
+
 
 # Parse
 
 Use the script `parse_wiki.py` to parse the data.
 
     python3 parse_wiki.py --help
-    python3 parse_wiki.py ./mtg2_parser FRENCH ./tokenizer_fr --threads 20
-    # python3 parse_wiki.py <parser exe> <parsing model> <path to tokenizer> --threads <num of threads> --beam <size of beam>
+    python3 parse_wiki.py ./mtg2_parser FRENCH ./tokenizer_fr extracted_texts/frwiki --threads 20
+    # python3 parse_wiki.py <parser exe> <parsing model> <path to tokenizer> <wiki root>--threads <num of threads> --beam <size of beam>
 
+For French, each thread should take less than 1 Go of memory.
 
 Pipeline:
 
