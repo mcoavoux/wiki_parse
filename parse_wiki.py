@@ -1,3 +1,4 @@
+#encoding:utf8
 import os
 import os.path
 import bz2
@@ -73,12 +74,25 @@ def preprocess_file(input_filename):
 def preprocess_files(input_filenames):
     return [ preprocess_file(filename) for filename in input_filenames ]
 
+def generate_files_bunch(files_list_list):
+    tmp = []
+    i = 0
+    for flist in files_list_list:
+        for f in flist:
+            tmp.append(f)
+            i += 1
+            if i % 200 == 0 :
+                yield tmp
+                tmp = []
+    if len(tmp) > 0:
+        yield tmp
 
 def do_files(input_filenames, parser_path, parsing_model, tokenizer_path, beamsize, threads):
     
-    files_list_list = preprocess_files(input_filenames)
+    #files_list_list = preprocess_files(input_filenames)
+    files_list_list = Parallel(n_jobs=threads)(delayed(preprocess_file)(filename) for filename in input_filenames)
     sys.stderr.write("Length of bunch of files: {} \n".format([len(l) for l in files_list_list]))
-    Parallel(n_jobs=threads)(delayed(nlp_pipeline)(flist, parser_path, parsing_model, tokenizer_path, beamsize) for flist in files_list_list)
+    Parallel(n_jobs=threads)(delayed(nlp_pipeline)(flist, parser_path, parsing_model, tokenizer_path, beamsize) for flist in generate_files_bunch(files_list_list))
 
 
 
