@@ -14,7 +14,7 @@ It is based on the following tools:
 - Giuseppe Attardi's [wikiextractor](https://github.com/attardi/wikiextractor)
 
 
-# Set up
+# Setup
 
 Instructions for downloading and compiling these tools are in `setup.sh`.
 To run it, you need boost, g++ and clang++.
@@ -35,8 +35,7 @@ Preprocess the data with `wikiextractor`:
 
 Make sure the python command you use call Python2.
 
-In order to do this process for French wiki*, just run the script `download_extract.sh`.
-It must be easily adaptable to newer wiki dumps and / or other languages.
+In order to do this process for French wiki*, just run the script `download_extract_french.sh`.
 
 
 # Parse
