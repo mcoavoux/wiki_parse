@@ -24,18 +24,21 @@ To run it, you need boost, g++ and clang++.
 The scripts need cirrus dumps as input, found at:
 
     https://dumps.wikimedia.org/other/cirrussearch/
-    
-    # Example: french wikiquote
-    wget https://dumps.wikimedia.org/other/cirrussearch/20171009/frwikiquote-20171009-cirrussearch-content.json.gz
 
-Preprocess the data with `wikiextractor`:
 
-    mkdir -p extracted_texts
-    python2 wikiextractor/cirrus-extract.py -o extracted_texts/frwikiquote frwikiquote-20171009-cirrussearch-content.json.gz
+To download and extract the data for a specific language, run:
 
-Make sure the python command you use call Python2.
+    bash download_extract_lang.sh <date> <language code>
 
-In order to do this process for French wiki*, just run the script `download_extract_french.sh`.
+where `date` is the time stamp for a wikipedia dump (see what is available
+[here](https://dumps.wikimedia.org/other/cirrussearch/))
+and language code is the identifier used by wikipedia for the language.
+
+
+For example:
+
+    bash download_extract_lang.sh 20171009 fr # download French wikis
+    bash download_extract_lang.sh 20171009 ko # download Korean wikis
 
 
 # Parse
@@ -43,8 +46,15 @@ In order to do this process for French wiki*, just run the script `download_extr
 Use the script `parse_wiki.py` to parse the data.
 
     python3 parse_wiki.py --help
-    python3 parse_wiki.py ./mtg2_parser FRENCH ./tokenizer_fr extracted_texts/frwiki --threads 20
     # python3 parse_wiki.py <parser exe> <parsing model> <path to tokenizer> <wiki root>--threads <num of threads> --beam <size of beam>
+    
+    python3 parse_wiki.py ./mtg2_parser FRENCH ./tokenizer_fr extracted_texts/frwiki --threads 20
+    # or
+    python3 parse_wiki.py "./mtg2_parser -p " FRENCH ./tokenizer_fr extracted_texts/frwiki --threads 20
+
+The `-p` option precomputes and caches character-based word embeddings
+(higher initialization time but faster parsing).
+
 
 For French, each thread should take less than 1 Go of memory.
 
