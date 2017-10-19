@@ -61,7 +61,8 @@ For French, each thread should take less than 1 Go of memory.
 Pipeline:
 
 1. Print each article in `<ID>.txt`, where ID is an identifier for the
-  article (`https://fr.wikipedia.org/?curid=ID` for a wikipedia article).
+  article (ex: `https://fr.wikisource.org/?curid=1026462` yields
+  the wikisource page for *Du côté de chez Swann*).
 2. Call the tokenizer (sentence segmentation, tokenization) and do
   some preprocessing to match the input format of the parser
   (essentially, replace parentheses by `-LRB-` / `-RRB-`).
