@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# needs java8 -> make sure `java -version` returns >= 1.8
+
+for arg in $@
+do
+    java -cp stanford-parser.jar edu.stanford.nlp.process.DocumentPreprocessor ${arg} > ${arg}.tok
+done

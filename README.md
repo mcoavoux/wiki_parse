@@ -21,10 +21,7 @@ To run it, you need boost, g++ and clang++.
 
 # Data
 
-The scripts need cirrus dumps as input, found at:
-
-    https://dumps.wikimedia.org/other/cirrussearch/
-
+The scripts need cirrus dumps as input, found at [https://dumps.wikimedia.org/other/cirrussearch/](https://dumps.wikimedia.org/other/cirrussearch/).
 
 To download and extract the data for a specific language, run:
 
