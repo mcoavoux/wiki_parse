@@ -87,10 +87,12 @@ def main(root, output):
                 voc[token[FORM]] += 1
                 tags[token[CPOS]] += 1
 
-    print("Number of documents : {}".format(n_documents))
-    print("Number of sentences : {}".format(n_sentences))
-    print("Number of tokens : {} (ignoring punctuation: {})".format(n_tokens, n_tokens - tags["PONCT"]))
-    print("Number of word types", len(voc))
+    of = open(output+"/stats.txt", "w")
+    of.write("Number of documents : {}\n".format(n_documents))
+    of.write("Number of sentences : {}\n".format(n_sentences))
+    of.write("Number of tokens : {} (ignoring punctuation: {})\n".format(n_tokens, n_tokens - tags["PONCT"]))
+    of.write("Number of word types : {}\n".format(len(voc)))
+    of.close()
 
     dump_distribution_dict(output+"/vocabulary", voc)
     dump_distribution_dict(output+"/tags", tags)
