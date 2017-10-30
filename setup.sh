@@ -28,3 +28,7 @@ cd ../../..
 cp mtg/mind_the_gap_v1.2/bin/mtg2_parser .
 cp -r mtg/mind_the_gap_v1.2/pretrained_models_projective/ml_lex/FRENCH .
 
+
+# Download and extract stanford tokenizer
+
+sh setup_stanford_tokenizer.sh

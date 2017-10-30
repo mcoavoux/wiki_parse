@@ -10,16 +10,28 @@ It is based on the following tools:
 - [mtg parser](https://github.com/mcoavoux/mtg/): outputs constituency
     trees, labelled dependency trees and morphological analyses.
 - Benoît Crabbé's [tokenizer](https://github.com/bencrabbe/nlp-toolbox/),
-    [forked version](https://github.com/mcoavoux/nlp-toolbox/)
+    [forked version](https://github.com/mcoavoux/nlp-toolbox/) for French
+- The tokenizer of the Stanford parser for other languages.
 - Giuseppe Attardi's [wikiextractor](https://github.com/attardi/wikiextractor)
+
+# Download the data
+
+You can download the parsed data on [LLF website](http://www.llf.cnrs.fr/Wikiparse).
+Here is what is available:
+
+**Language**|**Constituency trees**|**Discontinuous constituency trees**|**Labelled dependency trees**|**POS tags**|**Morphological analysis**
+:-----:|:-----:|:-----:|:-----:|:-----:|:-----:
+French |X| |X|X|X
+English (coming soon)||X||X|
+German (coming soon)||X||X|X
 
 
 # Setup
 
 Instructions for downloading and compiling these tools are in `setup.sh`.
-To run it, you need boost, g++ and clang++.
+To run it, you need boost, g++, clang++ and java8 (for the Stanford parser).
 
-# Data
+# Source Data
 
 The scripts need cirrus dumps as input, found at [https://dumps.wikimedia.org/other/cirrussearch/](https://dumps.wikimedia.org/other/cirrussearch/).
 
@@ -70,6 +82,9 @@ Pipeline:
     - `<ID>.txt.discbracket`: a [discbracket](http://discodop.readthedocs.io/en/latest/fileformats.html#discbracket)
       file containing a constituency tree.
 
+# References
+
+- Maximin Coavoux. *Discontinuous Constituency Parsing of Morphologically Rich Languages.* PhD dissertation, Université Paris Diderot, Université Sorbonne Paris Cité (USPC), 2017. [[bib]](phd.bib)
 
 
 
