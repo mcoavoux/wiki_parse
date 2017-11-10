@@ -16,7 +16,7 @@ It is based on the following tools:
 
 # Download the data
 
-You can download the parsed data on [LLF website](http://www.llf.cnrs.fr/Wikiparse).
+You can download the parsed data below.
 Here is what is available:
 
 **Language**|**Constituency trees**|**Discontinuous constituency trees**|**Labelled dependency trees**|**POS tags**|**Morphological analysis**
@@ -24,6 +24,25 @@ Here is what is available:
 French |X| |X|X|X
 English (coming soon)||X||X|
 German (coming soon)||X||X|X
+Basque |X| | |X|X
+Polish |X| | |X|X
+Swedish |X| | |X|X
+Hungarian |X| | |X|X
+
+
+## Links
+
+### French
+
+- [frwiki.tar.bz2](http://drehu.linguist.univ-paris-diderot.fr/wikiparse/frwiki.tar.bz2)
+- [frwikisource.tar.bz2](http://drehu.linguist.univ-paris-diderot.fr/wikiparse/frwikisource.tar.bz2)
+- [frwiktionary.tar.bz2](http://drehu.linguist.univ-paris-diderot.fr/wikiparse/frwiktionary.tar.bz2)
+- [frwikibooks.tar.bz2](http://drehu.linguist.univ-paris-diderot.fr/wikiparse/frwikibooks.tar.bz2)
+- [frwikiversity.tar.bz2](http://drehu.linguist.univ-paris-diderot.fr/wikiparse/frwikiversity.tar.bz2)
+- [frwikinews.tar.bz2](http://drehu.linguist.univ-paris-diderot.fr/wikiparse/frwikinews.tar.bz2)
+- [frwikivoyage.tar.bz2](http://drehu.linguist.univ-paris-diderot.fr/wikiparse/frwikivoyage.tar.bz2)
+- [frwikiquote.tar.bz2](http://drehu.linguist.univ-paris-diderot.fr/wikiparse/frwikiquote.tar.bz2)
+
 
 
 # Setup
