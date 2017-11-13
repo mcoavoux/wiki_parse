@@ -1,23 +1,30 @@
 
-# Parsing Wikipedia
+# Syntactic Parsing of Wikipedia
 
 This repository contains scripts for parsing wikipedia (and other wikis)
-easily. It initially aims at parsing French-language wikis, but
-will be extended to other languages.
+easily.
 
 It is based on the following tools:
 
 - [mtg parser](https://github.com/mcoavoux/mtg/): outputs constituency
     trees, labelled dependency trees and morphological analyses.
 - Benoît Crabbé's [tokenizer](https://github.com/bencrabbe/nlp-toolbox/),
-    [forked version](https://github.com/mcoavoux/nlp-toolbox/) for French
+    [forked version](https://github.com/mcoavoux/nlp-toolbox/) for French.
 - The tokenizer of the Stanford parser for other languages.
-- Giuseppe Attardi's [wikiextractor](https://github.com/attardi/wikiextractor)
+- Giuseppe Attardi's [wikiextractor](https://github.com/attardi/wikiextractor).
 
-# Download the data
 
-You can download the parsed data below.
-Here is what is available:
+The parser is described in Chapter 8 of my dissertation (Coavoux, forthcoming) and trained
+on the SPMRL dataset [(Seddah et al. 2013)](http://www.aclweb.org/anthology/W13-4917)
+and the discontinuous Penn Treebank [(Evang and Kallmeyer, 2011)](http://www.aclweb.org/anthology/W/W11/W11-2913.pdf) for English.
+
+# Data
+
+## Download the data
+
+You can download the parsed data at this url: [http://www.llf.cnrs.fr/wikiparse/](http://www.llf.cnrs.fr/wikiparse/).
+
+Here is what is (or will soon be) available:
 
 **Language**|**Constituency trees**|**Discontinuous constituency trees**|**Labelled dependency trees**|**POS tags**|**Morphological analysis**
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:
@@ -25,78 +32,76 @@ French |X| |X|X|X
 English ||X||X|
 German ||X||X|X
 Basque |X| | |X|X
-Polish |X| | |X|X
+Polish |X| |X|X|X
 Swedish |X| | |X|X
 Hungarian |X| | |X|X
 
-
-## Links
-
-
-- French
-    - [frwiki.tar.bz2](http://www.llf.cnrs.fr/wikiparse/frwiki.tar.bz2)
-    - [frwikisource.tar.bz2](http://www.llf.cnrs.fr/wikiparse/frwikisource.tar.bz2)
-    - [frwiktionary.tar.bz2](http://www.llf.cnrs.fr/wikiparse/frwiktionary.tar.bz2)
-    - [frwikibooks.tar.bz2](http://www.llf.cnrs.fr/wikiparse/frwikibooks.tar.bz2)
-    - [frwikiversity.tar.bz2](http://www.llf.cnrs.fr/wikiparse/frwikiversity.tar.bz2)
-    - [frwikinews.tar.bz2](http://www.llf.cnrs.fr/wikiparse/frwikinews.tar.bz2)
-    - [frwikivoyage.tar.bz2](http://www.llf.cnrs.fr/wikiparse/frwikivoyage.tar.bz2)
-    - [frwikiquote.tar.bz2](http://www.llf.cnrs.fr/wikiparse/frwikiquote.tar.bz2)
-- English
-    - [enwiki.tar.bz2](http://www.llf.cnrs.fr/wikiparse/enwiki.tar.bz2)
-    - [enwikisource.tar.bz2](http://www.llf.cnrs.fr/wikiparse/enwikisource.tar.bz2)
-    - [enwiktionary.tar.bz2](http://www.llf.cnrs.fr/wikiparse/enwiktionary.tar.bz2)
-    - [enwikibooks.tar.bz2](http://www.llf.cnrs.fr/wikiparse/enwikibooks.tar.bz2)
-    - [enwikiversity.tar.bz2](http://www.llf.cnrs.fr/wikiparse/enwikiversity.tar.bz2)
-    - [enwikinews.tar.bz2](http://www.llf.cnrs.fr/wikiparse/enwikinews.tar.bz2)
-    - [enwikivoyage.tar.bz2](http://www.llf.cnrs.fr/wikiparse/enwikivoyage.tar.bz2)
-    - [enwikiquote.tar.bz2](http://www.llf.cnrs.fr/wikiparse/enwikiquote.tar.bz2)
-- German
-    - [dewiki.tar.bz2](http://www.llf.cnrs.fr/wikiparse/dewiki.tar.bz2)
-    - [dewikisource.tar.bz2](http://www.llf.cnrs.fr/wikiparse/dewikisource.tar.bz2)
-    - [dewiktionary.tar.bz2](http://www.llf.cnrs.fr/wikiparse/dewiktionary.tar.bz2)
-    - [dewikibooks.tar.bz2](http://www.llf.cnrs.fr/wikiparse/dewikibooks.tar.bz2)
-    - [dewikiversity.tar.bz2](http://www.llf.cnrs.fr/wikiparse/dewikiversity.tar.bz2)
-    - [dewikinews.tar.bz2](http://www.llf.cnrs.fr/wikiparse/dewikinews.tar.bz2)
-    - [dewikivoyage.tar.bz2](http://www.llf.cnrs.fr/wikiparse/dewikivoyage.tar.bz2)
-    - [dewikiquote.tar.bz2](http://www.llf.cnrs.fr/wikiparse/dewikiquote.tar.bz2)
-- Basque
-    - [euwiki.tar.bz2](http://www.llf.cnrs.fr/wikiparse/euwiki.tar.bz2)
-    - [euwiktionary.tar.bz2](http://www.llf.cnrs.fr/wikiparse/euwiktionary.tar.bz2)
-    - [euwikibooks.tar.bz2](http://www.llf.cnrs.fr/wikiparse/euwikibooks.tar.bz2)
-    - [euwikiquote.tar.bz2](http://www.llf.cnrs.fr/wikiparse/euwikiquote.tar.bz2)
-- Polish
-    - [plwiki.tar.bz2](http://www.llf.cnrs.fr/wikiparse/plwiki.tar.bz2)
-    - [plwikisource.tar.bz2](http://www.llf.cnrs.fr/wikiparse/plwikisource.tar.bz2)
-    - [plwiktionary.tar.bz2](http://www.llf.cnrs.fr/wikiparse/plwiktionary.tar.bz2)
-    - [plwikibooks.tar.bz2](http://www.llf.cnrs.fr/wikiparse/plwikibooks.tar.bz2)
-    - [plwikinews.tar.bz2](http://www.llf.cnrs.fr/wikiparse/plwikinews.tar.bz2)
-    - [plwikivoyage.tar.bz2](http://www.llf.cnrs.fr/wikiparse/plwikivoyage.tar.bz2)
-    - [plwikiquote.tar.bz2](http://www.llf.cnrs.fr/wikiparse/plwikiquote.tar.bz2)
-- Swedish
-    - [svwiki.tar.bz2](http://www.llf.cnrs.fr/wikiparse/svwiki.tar.bz2)
-    - [svwikisource.tar.bz2](http://www.llf.cnrs.fr/wikiparse/svwikisource.tar.bz2)
-    - [svwiktionary.tar.bz2](http://www.llf.cnrs.fr/wikiparse/svwiktionary.tar.bz2)
-    - [svwikibooks.tar.bz2](http://www.llf.cnrs.fr/wikiparse/svwikibooks.tar.bz2)
-    - [svwikiversity.tar.bz2](http://www.llf.cnrs.fr/wikiparse/svwikiversity.tar.bz2)
-    - [svwikinews.tar.bz2](http://www.llf.cnrs.fr/wikiparse/svwikinews.tar.bz2)
-    - [svwikivoyage.tar.bz2](http://www.llf.cnrs.fr/wikiparse/svwikivoyage.tar.bz2)
-    - [svwikiquote.tar.bz2](http://www.llf.cnrs.fr/wikiparse/svwikiquote.tar.bz2)
-- Hungarian
-    - [huwiki.tar.bz2](http://www.llf.cnrs.fr/wikiparse/huwiki.tar.bz2)
-    - [huwikisource.tar.bz2](http://www.llf.cnrs.fr/wikiparse/huwikisource.tar.bz2)
-    - [huwiktionary.tar.bz2](http://www.llf.cnrs.fr/wikiparse/huwiktionary.tar.bz2)
-    - [huwikibooks.tar.bz2](http://www.llf.cnrs.fr/wikiparse/huwikibooks.tar.bz2)
-    - [huwikinews.tar.bz2](http://www.llf.cnrs.fr/wikiparse/huwikinews.tar.bz2)
-    - [huwikiquote.tar.bz2](http://www.llf.cnrs.fr/wikiparse/huwikiquote.tar.bz2)
+## Data description
 
 
-# Setup
+For each wiki page, we provide two files:
+
+- `ID.txt.tok.conll`: dependency trees in [conll](http://anthology.aclweb.org/W/W06/W06-2920.pdf) format, including morphological analysis.
+- `ID.txt.tok.discbracket`: constituency trees in [discbracket](http://discodop.readthedocs.io/en/latest/fileformats.html#discbracket) format.
+
+where `ID` is an identifier for the wiki page.
+The wikipedia article corresponding to the file `ID.txt.tok.conll`
+is accessible with the URL `https://fr.wikipedia.org/?curid=ID`.
+For example, [https://fr.wikipedia.org/?curid=1750](https://fr.wikipedia.org/?curid=1750) yields the article *Linguistique*.
+The parse trees for this article are in `1750.txt.tok.conll` and `1750.txt.tok.discbracket`.
+
+
+The morphological analysis for a token is provided as a set of attribute-value couples (see conll example below).
+The attributes include:
+
+- French:  gender (g), number (n), tense (t), mood (m), subcategory (s), person (p), multiword expression (mwehead and pred).
+- German: case, number, gender, degree, tense, mood, person.
+
+See the documentation of the SPMRL dataset release for more information about morphological annotations.
+
+### Examples
+
+
+Discbracket tree:
+
+    (ROOT (SENT (NP (DET 0=La) (NC 1=fin)  (PP (P 2=de (NP (DET 3=la) (NC 4=mission) (NPP+ (NPP 5=STS) (PONCT 6=-) (ADJ 7=114)))))) (VN (V 8=est) (VPP 9=prévue)) (PP (P 10=pour) (NP (DET 11=le) (ADJ 12=7) (NC 13=août))) (PONCT 14=.)))
+
+
+Corresponding constituency tree (drawn with [discodop](https://github.com/andreasvc/disco-dop/)):
+
+![](wtreedisco.png)
+
+Conll tree:
+
+    1	La	_	DET	DET	g=f|n=s|s=def	2	det	_	_
+    2	fin	_	NC	NC	g=f|n=s|s=c	10	suj	_	_
+    3	de	_	P	P	_	2	dep	_	_
+    4	la	_	DET	DET	g=f|n=s|s=def	5	det	_	_
+    5	mission	_	NC	NC	g=f|n=s|s=c	3	obj.p	_	_
+    6	STS	_	NPP	NPP	mwehead=NPP+|s=p|pred=y	5	mod	_	_
+    7	-	_	PONCT	PONCT	s=w|pred=y	6	dep_cpd	_	_
+    8	114	_	ADJ	ADJ	g=f|s=card|pred=y	6	dep_cpd	_	_
+    9	est	_	V	V	m=ind|n=s|p=3|t=pst	10	aux.pass	_	_
+    10	prévue	_	VPP	VPP	g=f|m=part|n=s|t=past	0	root	_	_
+    11	pour	_	P	P	_	10	mod	_	_
+    12	le	_	DET	DET	g=m|n=s|s=def	14	det	_	_
+    13	7	_	ADJ	ADJ	g=m|n=s|s=card	14	mod	_	_
+    14	août	_	NC	NC	g=m|n=s|s=c	11	obj.p	_	_
+    15	.	_	PONCT	PONCT	s=s	10	ponct	_	_
+
+
+Corresponding dependency tree (drawn with [ginger](https://github.com/LoicGrobol/ginger/)):
+
+![](wdeptree.png)
+
+# Reparse
+
+## Setup
 
 Instructions for downloading and compiling these tools are in `setup.sh`.
 To run it, you need boost, g++, clang++ and java8 (for the Stanford parser).
 
-# Source Data
+## Source Data
 
 The scripts need cirrus dumps as input, found at [https://dumps.wikimedia.org/other/cirrussearch/](https://dumps.wikimedia.org/other/cirrussearch/).
 
@@ -111,11 +116,11 @@ and language code is the identifier used by wikipedia for the language.
 
 For example:
 
-    bash download_extract_lang.sh 20171009 fr # download French wikis
-    bash download_extract_lang.sh 20171009 ko # download Korean wikis
+    bash download_extract_lang.sh 20171009 fr # download French wiki dump of 9 october 2017
+    bash download_extract_lang.sh 20171009 ko # download Korean wiki
 
 
-# Parse
+## Parse
 
 Use the script `parse_wiki.py` to parse the data.
 
@@ -135,7 +140,7 @@ For French, each thread should take less than 1 Go of memory.
 Pipeline:
 
 1. Print each article in `<ID>.txt`, where ID is an identifier for the
-  article (ex: `https://fr.wikisource.org/?curid=1026462` yields
+  article (ex: [`https://fr.wikisource.org/?curid=1026462`](https://fr.wikisource.org/?curid=1026462) yields
   the wikisource page for *Du côté de chez Swann*).
 2. Call the tokenizer (sentence segmentation, tokenization) and do
   some preprocessing to match the input format of the parser
@@ -149,7 +154,7 @@ Pipeline:
 
 # References
 
-- Maximin Coavoux. *Discontinuous Constituency Parsing of Morphologically Rich Languages.* PhD dissertation, Université Paris Diderot, Université Sorbonne Paris Cité (USPC), 2017. [[bib]](phd.bib)
+- Maximin Coavoux. *Discontinuous Constituency Parsing of Morphologically Rich Languages.* PhD dissertation, Université Paris Diderot, Université Sorbonne Paris Cité (USPC), 2017. [[bib]](https://raw.githubusercontent.com/mcoavoux/wiki_parse/master/phd.bib)
 
 
 
