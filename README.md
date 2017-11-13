@@ -22,8 +22,8 @@ Here is what is available:
 **Language**|**Constituency trees**|**Discontinuous constituency trees**|**Labelled dependency trees**|**POS tags**|**Morphological analysis**
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:
 French |X| |X|X|X
-English (coming soon)||X||X|
-German (coming soon)||X||X|X
+English ||X||X|
+German ||X||X|X
 Basque |X| | |X|X
 Polish |X| | |X|X
 Swedish |X| | |X|X
@@ -32,17 +32,63 @@ Hungarian |X| | |X|X
 
 ## Links
 
-### French
 
-- [frwiki.tar.bz2](http://drehu.linguist.univ-paris-diderot.fr/wikiparse/frwiki.tar.bz2)
-- [frwikisource.tar.bz2](http://drehu.linguist.univ-paris-diderot.fr/wikiparse/frwikisource.tar.bz2)
-- [frwiktionary.tar.bz2](http://drehu.linguist.univ-paris-diderot.fr/wikiparse/frwiktionary.tar.bz2)
-- [frwikibooks.tar.bz2](http://drehu.linguist.univ-paris-diderot.fr/wikiparse/frwikibooks.tar.bz2)
-- [frwikiversity.tar.bz2](http://drehu.linguist.univ-paris-diderot.fr/wikiparse/frwikiversity.tar.bz2)
-- [frwikinews.tar.bz2](http://drehu.linguist.univ-paris-diderot.fr/wikiparse/frwikinews.tar.bz2)
-- [frwikivoyage.tar.bz2](http://drehu.linguist.univ-paris-diderot.fr/wikiparse/frwikivoyage.tar.bz2)
-- [frwikiquote.tar.bz2](http://drehu.linguist.univ-paris-diderot.fr/wikiparse/frwikiquote.tar.bz2)
-
+- French
+    - [frwiki.tar.bz2](http://www.llf.cnrs.fr/wikiparse/frwiki.tar.bz2)
+    - [frwikisource.tar.bz2](http://www.llf.cnrs.fr/wikiparse/frwikisource.tar.bz2)
+    - [frwiktionary.tar.bz2](http://www.llf.cnrs.fr/wikiparse/frwiktionary.tar.bz2)
+    - [frwikibooks.tar.bz2](http://www.llf.cnrs.fr/wikiparse/frwikibooks.tar.bz2)
+    - [frwikiversity.tar.bz2](http://www.llf.cnrs.fr/wikiparse/frwikiversity.tar.bz2)
+    - [frwikinews.tar.bz2](http://www.llf.cnrs.fr/wikiparse/frwikinews.tar.bz2)
+    - [frwikivoyage.tar.bz2](http://www.llf.cnrs.fr/wikiparse/frwikivoyage.tar.bz2)
+    - [frwikiquote.tar.bz2](http://www.llf.cnrs.fr/wikiparse/frwikiquote.tar.bz2)
+- English
+    - [enwiki.tar.bz2](http://www.llf.cnrs.fr/wikiparse/enwiki.tar.bz2)
+    - [enwikisource.tar.bz2](http://www.llf.cnrs.fr/wikiparse/enwikisource.tar.bz2)
+    - [enwiktionary.tar.bz2](http://www.llf.cnrs.fr/wikiparse/enwiktionary.tar.bz2)
+    - [enwikibooks.tar.bz2](http://www.llf.cnrs.fr/wikiparse/enwikibooks.tar.bz2)
+    - [enwikiversity.tar.bz2](http://www.llf.cnrs.fr/wikiparse/enwikiversity.tar.bz2)
+    - [enwikinews.tar.bz2](http://www.llf.cnrs.fr/wikiparse/enwikinews.tar.bz2)
+    - [enwikivoyage.tar.bz2](http://www.llf.cnrs.fr/wikiparse/enwikivoyage.tar.bz2)
+    - [enwikiquote.tar.bz2](http://www.llf.cnrs.fr/wikiparse/enwikiquote.tar.bz2)
+- German
+    - [dewiki.tar.bz2](http://www.llf.cnrs.fr/wikiparse/dewiki.tar.bz2)
+    - [dewikisource.tar.bz2](http://www.llf.cnrs.fr/wikiparse/dewikisource.tar.bz2)
+    - [dewiktionary.tar.bz2](http://www.llf.cnrs.fr/wikiparse/dewiktionary.tar.bz2)
+    - [dewikibooks.tar.bz2](http://www.llf.cnrs.fr/wikiparse/dewikibooks.tar.bz2)
+    - [dewikiversity.tar.bz2](http://www.llf.cnrs.fr/wikiparse/dewikiversity.tar.bz2)
+    - [dewikinews.tar.bz2](http://www.llf.cnrs.fr/wikiparse/dewikinews.tar.bz2)
+    - [dewikivoyage.tar.bz2](http://www.llf.cnrs.fr/wikiparse/dewikivoyage.tar.bz2)
+    - [dewikiquote.tar.bz2](http://www.llf.cnrs.fr/wikiparse/dewikiquote.tar.bz2)
+- Basque
+    - [euwiki.tar.bz2](http://www.llf.cnrs.fr/wikiparse/euwiki.tar.bz2)
+    - [euwiktionary.tar.bz2](http://www.llf.cnrs.fr/wikiparse/euwiktionary.tar.bz2)
+    - [euwikibooks.tar.bz2](http://www.llf.cnrs.fr/wikiparse/euwikibooks.tar.bz2)
+    - [euwikiquote.tar.bz2](http://www.llf.cnrs.fr/wikiparse/euwikiquote.tar.bz2)
+- Polish
+    - [plwiki.tar.bz2](http://www.llf.cnrs.fr/wikiparse/plwiki.tar.bz2)
+    - [plwikisource.tar.bz2](http://www.llf.cnrs.fr/wikiparse/plwikisource.tar.bz2)
+    - [plwiktionary.tar.bz2](http://www.llf.cnrs.fr/wikiparse/plwiktionary.tar.bz2)
+    - [plwikibooks.tar.bz2](http://www.llf.cnrs.fr/wikiparse/plwikibooks.tar.bz2)
+    - [plwikinews.tar.bz2](http://www.llf.cnrs.fr/wikiparse/plwikinews.tar.bz2)
+    - [plwikivoyage.tar.bz2](http://www.llf.cnrs.fr/wikiparse/plwikivoyage.tar.bz2)
+    - [plwikiquote.tar.bz2](http://www.llf.cnrs.fr/wikiparse/plwikiquote.tar.bz2)
+- Swedish
+    - [svwiki.tar.bz2](http://www.llf.cnrs.fr/wikiparse/svwiki.tar.bz2)
+    - [svwikisource.tar.bz2](http://www.llf.cnrs.fr/wikiparse/svwikisource.tar.bz2)
+    - [svwiktionary.tar.bz2](http://www.llf.cnrs.fr/wikiparse/svwiktionary.tar.bz2)
+    - [svwikibooks.tar.bz2](http://www.llf.cnrs.fr/wikiparse/svwikibooks.tar.bz2)
+    - [svwikiversity.tar.bz2](http://www.llf.cnrs.fr/wikiparse/svwikiversity.tar.bz2)
+    - [svwikinews.tar.bz2](http://www.llf.cnrs.fr/wikiparse/svwikinews.tar.bz2)
+    - [svwikivoyage.tar.bz2](http://www.llf.cnrs.fr/wikiparse/svwikivoyage.tar.bz2)
+    - [svwikiquote.tar.bz2](http://www.llf.cnrs.fr/wikiparse/svwikiquote.tar.bz2)
+- Hungarian
+    - [huwiki.tar.bz2](http://www.llf.cnrs.fr/wikiparse/huwiki.tar.bz2)
+    - [huwikisource.tar.bz2](http://www.llf.cnrs.fr/wikiparse/huwikisource.tar.bz2)
+    - [huwiktionary.tar.bz2](http://www.llf.cnrs.fr/wikiparse/huwiktionary.tar.bz2)
+    - [huwikibooks.tar.bz2](http://www.llf.cnrs.fr/wikiparse/huwikibooks.tar.bz2)
+    - [huwikinews.tar.bz2](http://www.llf.cnrs.fr/wikiparse/huwikinews.tar.bz2)
+    - [huwikiquote.tar.bz2](http://www.llf.cnrs.fr/wikiparse/huwikiquote.tar.bz2)
 
 
 # Setup
