@@ -14,9 +14,19 @@ It is based on the following tools:
 - Giuseppe Attardi's [wikiextractor](https://github.com/attardi/wikiextractor).
 
 
-The parser is described in Chapter 8 of my dissertation (Coavoux, forthcoming) and trained
+The parser is described in Chapter 8 of my dissertation and trained
 on the SPMRL dataset [(Seddah et al. 2013)](http://www.aclweb.org/anthology/W13-4917)
 and the discontinuous Penn Treebank [(Evang and Kallmeyer, 2011)](http://www.aclweb.org/anthology/W/W11/W11-2913.pdf) for English.
+
+If you use this data in the context of a publication, please cite:
+
+    @phdthesis{coavoux-phd-thesis,
+        author = {Coavoux, Maximin},
+        school = {Univ Paris Diderot, Sorbonne Paris Cit\'{e}},
+        title = {Discontinuous Constituency Parsing of Morphologically Rich Languages},
+        year = 2017
+    }
+
 
 # Data
 
