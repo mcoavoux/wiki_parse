@@ -32,7 +32,7 @@ If you use this data in the context of a publication, please cite:
 
 ## Download the data
 
-You can download the parsed data at this url: [http://www.llf.cnrs.fr/wikiparse/](http://www.llf.cnrs.fr/wikiparse/).
+You can download the parsed data at this url: [http://drehu.linguist.univ-paris-diderot.fr/wikiparse/](http://drehu.linguist.univ-paris-diderot.fr/wikiparse/).
 
 Here is what is (or will soon be) available:
 
