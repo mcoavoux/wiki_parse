@@ -104,6 +104,19 @@ Corresponding dependency tree (drawn with [ginger](https://github.com/LoicGrobol
 
 ![](wdeptree.png)
 
+
+## Some stats (wikipedia only)
+
+|Langage|Number of articles|Number of sentences|Number of tokens|
+|:----|---:|---:|---:|
+|English|5,490,659|210,149,524|3,641,031,044|
+|Basque|284,192|3,423,803|53,630,159|
+|German|2,109,141|72,803,332|1,225,851,095|
+|French|1,917,621|48,675,094|1,303,811,180|
+|Hungarian|418,216|12,962,605|178,171,115|
+|Polish|1,244,308|27,580,861|393,371,595|
+|Swedish|3,789,290|32,218,499|500,037,343|
+
 # Reparse
 
 ## Setup
