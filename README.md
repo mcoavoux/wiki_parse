@@ -34,7 +34,7 @@ If you use this data in the context of a publication, please cite:
 
 You can download the parsed data at this url: [http://www.llf.cnrs.fr/wikiparse/](http://www.llf.cnrs.fr/wikiparse/).
 
-Here is what is (or will soon be) available:
+Here is what is available:
 
 **Language**|**Constituency trees**|**Discontinuous constituency trees**|**Labelled dependency trees**|**POS tags**|**Morphological analysis**
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:
