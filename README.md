@@ -74,7 +74,7 @@ See the documentation of the SPMRL dataset release for more information about mo
 
 Discbracket tree:
 
-    (ROOT (SENT (NP (DET 0=La) (NC 1=fin)  (PP (P 2=de (NP (DET 3=la) (NC 4=mission) (NPP+ (NPP 5=STS) (PONCT 6=-) (ADJ 7=114)))))) (VN (V 8=est) (VPP 9=prévue)) (PP (P 10=pour) (NP (DET 11=le) (ADJ 12=7) (NC 13=août))) (PONCT 14=.)))
+    (ROOT (SENT (NP (DET 0=La) (NC 1=fin)  (PP (P 2=de) (NP (DET 3=la) (NC 4=mission) (NPP+ (NPP 5=STS) (PONCT 6=-) (ADJ 7=114))))) (VN (V 8=est) (VPP 9=prévue)) (PP (P 10=pour) (NP (DET 11=le) (ADJ 12=7) (NC 13=août))) (PONCT 14=.)))
 
 
 Corresponding constituency tree (drawn with [discodop](https://github.com/andreasvc/disco-dop/)):
